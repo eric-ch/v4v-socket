@@ -1,0 +1,16 @@
+test4v is a collection of tests for the v4v kernel module from userland.
+
+Test binaries may share usual headers in common/include to avoid code
+duplication and ease test writing.
+
+sockops will ease testing usual socket behaviour through cli interface. It
+provides a trivial logic to add commands in order to test standard socket
+operations.
+
+Usage: sockops <command> [...]
+Commands:
+help    Display help.
+socket  <stream|dgram>  Create a V4V socket of given type.
+bind    <addr> <port>   Create a V4V stream socket and binds the given address.
+listen  <addr> <port>   Create a V4V stream socket, binds the given address and set it listening.
+
