@@ -1,0 +1,11 @@
+Simple utility which reads and write data across domain using V4V protocol.
+
+V4c provides two modes of functionality. The connect mode and the listen mode.
+
+Basic usage:
+v4c [options] domid port
+v4c -l -p local_port
+Options:
+       -l, --listen    listen mode, wait for clients to connect.
+       -p, --port      set local port number.
+
